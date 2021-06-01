@@ -9,10 +9,17 @@
   },
   "dependencies": { "parcel-bundler": "^1.6.1" },
   "devDependencies": {
-    "@babel/core": "7.2.0"
+    "@babel/core": "7.2.0",
+    "surge": "latest",
+    "git-scripts": "0.2.1"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain example-githooks.surge.sh"
+    }
   },
   "keywords": ["javascript", "starter"]
 }
